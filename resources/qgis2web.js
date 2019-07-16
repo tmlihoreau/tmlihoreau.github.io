@@ -64,7 +64,7 @@ var map = new ol.Map({
     view: new ol.View({
          maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
             code: 'EPSG:27700',
-            extent: [261867.115679, 557966.324515, 321609.989728, 617538.116147],
+            extent: [261867.115679, 557966.324515, 321609.989728, 618773.174117],
             units: 'm'})
     })
 });
@@ -76,7 +76,7 @@ layerSwitcher.showPanel();
 
 
     var searchLayer = new ol.SearchLayer({
-      layer: lyr_Coverage_1742_1799_f_1,
+      layer: lyr_Coverage17421799_1,
       colName: 'PARISH',
       zoom: 10,
       collapsed: true,
@@ -84,7 +84,7 @@ layerSwitcher.showPanel();
     });
 
     map.addControl(searchLayer);
-map.getView().fit([261867.115679, 557966.324515, 321609.989728, 617538.116147], map.getSize());
+map.getView().fit([238688.735403, 538532.754097, 398632.266969, 629757.260286], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
